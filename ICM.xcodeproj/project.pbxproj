@@ -13,6 +13,10 @@
 		CB5F1C101A176D8D00920461 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5F1C0F1A176D8D00920461 /* Images.xcassets */; };
 		CB5F1C131A176D8D00920461 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB5F1C111A176D8D00920461 /* LaunchScreen.xib */; };
 		CB5F1C1F1A176D8D00920461 /* ICMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5F1C1E1A176D8D00920461 /* ICMTests.swift */; };
+		CB5F1C2F1A176DA800920461 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5F1C2E1A176DA800920461 /* NotificationCenter.framework */; };
+		CB5F1C341A176DA800920461 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5F1C331A176DA800920461 /* TodayViewController.swift */; };
+		CB5F1C361A176DA800920461 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5F1C351A176DA800920461 /* MainInterface.storyboard */; };
+		CB5F1C391A176DA800920461 /* ICM Today.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CB5F1C2C1A176DA800920461 /* ICM Today.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +27,28 @@
 			remoteGlobalIDString = CB5F1C021A176D8D00920461;
 			remoteInfo = ICM;
 		};
+		CB5F1C371A176DA800920461 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB5F1BFB1A176D8D00920461 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB5F1C2B1A176DA800920461;
+			remoteInfo = "ICM Today";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CB5F1C3D1A176DA800920461 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CB5F1C391A176DA800920461 /* ICM Today.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CB5F1C031A176D8D00920461 /* ICM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICM.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +61,11 @@
 		CB5F1C181A176D8D00920461 /* ICMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ICMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5F1C1D1A176D8D00920461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB5F1C1E1A176D8D00920461 /* ICMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICMTests.swift; sourceTree = "<group>"; };
+		CB5F1C2C1A176DA800920461 /* ICM Today.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ICM Today.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB5F1C2E1A176DA800920461 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		CB5F1C321A176DA800920461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB5F1C331A176DA800920461 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		CB5F1C351A176DA800920461 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +83,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB5F1C291A176DA800920461 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB5F1C2F1A176DA800920461 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +99,8 @@
 			children = (
 				CB5F1C051A176D8D00920461 /* ICM */,
 				CB5F1C1B1A176D8D00920461 /* ICMTests */,
+				CB5F1C301A176DA800920461 /* ICM Today */,
+				CB5F1C2D1A176DA800920461 /* Frameworks */,
 				CB5F1C041A176D8D00920461 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +110,7 @@
 			children = (
 				CB5F1C031A176D8D00920461 /* ICM.app */,
 				CB5F1C181A176D8D00920461 /* ICMTests.xctest */,
+				CB5F1C2C1A176DA800920461 /* ICM Today.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +153,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CB5F1C2D1A176DA800920461 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB5F1C2E1A176DA800920461 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB5F1C301A176DA800920461 /* ICM Today */ = {
+			isa = PBXGroup;
+			children = (
+				CB5F1C331A176DA800920461 /* TodayViewController.swift */,
+				CB5F1C351A176DA800920461 /* MainInterface.storyboard */,
+				CB5F1C311A176DA800920461 /* Supporting Files */,
+			);
+			path = "ICM Today";
+			sourceTree = "<group>";
+		};
+		CB5F1C311A176DA800920461 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB5F1C321A176DA800920461 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +189,12 @@
 				CB5F1BFF1A176D8D00920461 /* Sources */,
 				CB5F1C001A176D8D00920461 /* Frameworks */,
 				CB5F1C011A176D8D00920461 /* Resources */,
+				CB5F1C3D1A176DA800920461 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CB5F1C381A176DA800920461 /* PBXTargetDependency */,
 			);
 			name = ICM;
 			productName = ICM;
@@ -150,6 +219,23 @@
 			productReference = CB5F1C181A176D8D00920461 /* ICMTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CB5F1C2B1A176DA800920461 /* ICM Today */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB5F1C3A1A176DA800920461 /* Build configuration list for PBXNativeTarget "ICM Today" */;
+			buildPhases = (
+				CB5F1C281A176DA800920461 /* Sources */,
+				CB5F1C291A176DA800920461 /* Frameworks */,
+				CB5F1C2A1A176DA800920461 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ICM Today";
+			productName = "ICM Today";
+			productReference = CB5F1C2C1A176DA800920461 /* ICM Today.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +251,9 @@
 					CB5F1C171A176D8D00920461 = {
 						CreatedOnToolsVersion = 6.1.1;
 						TestTargetID = CB5F1C021A176D8D00920461;
+					};
+					CB5F1C2B1A176DA800920461 = {
+						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
 			};
@@ -183,6 +272,7 @@
 			targets = (
 				CB5F1C021A176D8D00920461 /* ICM */,
 				CB5F1C171A176D8D00920461 /* ICMTests */,
+				CB5F1C2B1A176DA800920461 /* ICM Today */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +292,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB5F1C2A1A176DA800920461 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB5F1C361A176DA800920461 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +323,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB5F1C281A176DA800920461 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB5F1C341A176DA800920461 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +338,11 @@
 			isa = PBXTargetDependency;
 			target = CB5F1C021A176D8D00920461 /* ICM */;
 			targetProxy = CB5F1C191A176D8D00920461 /* PBXContainerItemProxy */;
+		};
+		CB5F1C381A176DA800920461 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB5F1C2B1A176DA800920461 /* ICM Today */;
+			targetProxy = CB5F1C371A176DA800920461 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -338,6 +449,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ICM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,6 +460,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ICM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -388,6 +501,30 @@
 			};
 			name = Release;
 		};
+		CB5F1C3B1A176DA800920461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ICM Today/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CB5F1C3C1A176DA800920461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "ICM Today/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -413,6 +550,14 @@
 			buildConfigurations = (
 				CB5F1C261A176D8D00920461 /* Debug */,
 				CB5F1C271A176D8D00920461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CB5F1C3A1A176DA800920461 /* Build configuration list for PBXNativeTarget "ICM Today" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB5F1C3B1A176DA800920461 /* Debug */,
+				CB5F1C3C1A176DA800920461 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
