@@ -10,13 +10,26 @@ import UIKit
 import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
-    @IBOutlet weak var mainImageView: UIImageView!
-        
+    @IBOutlet weak var imageView: UIImageView!
+
+
+    // MARK: - Lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        preferredContentSize = mainImageView.bounds.size
+        // "crop" image
+        let w = view.bounds.size.width
+        let h: CGFloat = 202
+        imageView.frame = CGRect(x: -45, y: -26, width: w, height: h)
+        println("\(imageView.frame)")
+
+        // set widget height
+        preferredContentSize = CGSize(width: w, height: h)
     }
+
+
+    // MARK: - NCWidgetProviding
     
     func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)!) {
         // Perform any setup necessary in order to update the view.
@@ -31,5 +44,5 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     func widgetMarginInsetsForProposedMarginInsets(defaultMarginInsets: UIEdgeInsets) -> UIEdgeInsets {
         return UIEdgeInsetsZero
     }
-    
+
 }
