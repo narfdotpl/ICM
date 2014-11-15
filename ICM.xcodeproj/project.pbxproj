@@ -17,6 +17,7 @@
 		CB5F1C341A176DA800920461 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5F1C331A176DA800920461 /* TodayViewController.swift */; };
 		CB5F1C361A176DA800920461 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5F1C351A176DA800920461 /* MainInterface.storyboard */; };
 		CB5F1C391A176DA800920461 /* ICM Today.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CB5F1C2C1A176DA800920461 /* ICM Today.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CB5F1C3F1A17732200920461 /* cropped.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5F1C3E1A17732200920461 /* cropped.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		CB5F1C321A176DA800920461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB5F1C331A176DA800920461 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		CB5F1C351A176DA800920461 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		CB5F1C3E1A17732200920461 /* cropped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cropped.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 		CB5F1C301A176DA800920461 /* ICM Today */ = {
 			isa = PBXGroup;
 			children = (
+				CB5F1C401A17732C00920461 /* Assets */,
 				CB5F1C331A176DA800920461 /* TodayViewController.swift */,
 				CB5F1C351A176DA800920461 /* MainInterface.storyboard */,
 				CB5F1C311A176DA800920461 /* Supporting Files */,
@@ -177,6 +180,14 @@
 				CB5F1C321A176DA800920461 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB5F1C401A17732C00920461 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CB5F1C3E1A17732200920461 /* cropped.png */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB5F1C361A176DA800920461 /* MainInterface.storyboard in Resources */,
+				CB5F1C3F1A17732200920461 /* cropped.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +556,7 @@
 				CB5F1C241A176D8D00920461 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB5F1C251A176D8D00920461 /* Build configuration list for PBXNativeTarget "ICMTests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +565,7 @@
 				CB5F1C271A176D8D00920461 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB5F1C3A1A176DA800920461 /* Build configuration list for PBXNativeTarget "ICM Today" */ = {
 			isa = XCConfigurationList;
@@ -560,6 +574,7 @@
 				CB5F1C3C1A176DA800920461 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
