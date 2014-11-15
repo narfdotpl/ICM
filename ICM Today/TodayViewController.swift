@@ -19,12 +19,14 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         super.viewDidLoad()
 
         // "crop" image
-        let w = view.bounds.size.width
+        let x: CGFloat = -45
+        let y: CGFloat = -26
+        let w: CGFloat = view.bounds.size.width
         let h: CGFloat = 202
-        imageView.frame = CGRect(x: -45, y: -26, width: w, height: h)
+        imageView.frame = CGRect(x: x, y: y, width: w - x, height: h - y)
 
         // set widget height
-        preferredContentSize = CGSize(width: w, height: h)
+        preferredContentSize = CGSize(width: w, height: h + 45)
     }
 
 
