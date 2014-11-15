@@ -22,13 +22,21 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         let w = view.bounds.size.width
         let h: CGFloat = 202
         imageView.frame = CGRect(x: -45, y: -26, width: w, height: h)
-        println("\(imageView.frame)")
 
         // set widget height
         preferredContentSize = CGSize(width: w, height: h)
     }
 
 
+    // MARK: - Actions
+
+    @IBAction func imageViewTapped(sender: UIButton) {
+        if let URL = NSURL(string: "http://www.meteo.pl/um/metco/mgram_pict.php?ntype=0u&fdate=2014111506&row=360&col=241&lang=en") {
+            extensionContext?.openURL(URL, completionHandler: nil)
+        }
+    }
+
+    
     // MARK: - NCWidgetProviding
     
     func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)!) {
