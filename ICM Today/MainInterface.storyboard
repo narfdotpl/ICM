@@ -13,17 +13,12 @@
                         <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="196"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k1o-S5-9dA">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="196"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cropped.png" translatesAutoresizingMaskIntoConstraints="NO" id="Weu-HK-MPG">
-                                        <rect key="frame" x="0.0" y="0.0" width="452" height="196"/>
-                                    </imageView>
-                                </subviews>
-                            </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cropped.png" translatesAutoresizingMaskIntoConstraints="NO" id="Weu-HK-MPG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
+                            </imageView>
                         </subviews>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -31,10 +26,9 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="196"/>
+                    <size key="freeformSize" width="375" height="162"/>
                     <connections>
                         <outlet property="mainImageView" destination="Weu-HK-MPG" id="66n-2c-2RL"/>
-                        <outlet property="scrollView" destination="k1o-S5-9dA" id="YRI-1V-Itw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
